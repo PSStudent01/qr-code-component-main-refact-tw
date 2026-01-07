@@ -1,10 +1,9 @@
-
 * {
   box-sizing: border-box;
 }
 
 
-body{
+body {
   /*border: 3px solid black;*/
   margin: 0;
   padding: 0;
@@ -12,16 +11,16 @@ body{
   background: hsl(47, 88%, 63%);
 }
 
-.container{
-    /*border: 3px solid red;*/
-    /*min-height: 100hv;*/
-    display: flex;
-    /*flex-direction: column;*/
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    
-} 
+.container {
+  /*border: 3px solid red;*/
+  /*min-height: 100hv;*/
+  display: flex;
+  /*flex-direction: column;*/
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
 
 .card {
   /*border: 5px solid blue;*/
@@ -31,11 +30,15 @@ body{
   background: hsl(0, 0%, 100%);
   border: 1px solid hsl(0, 0%, 7%);
   width: 384px;
-  height: 522px; 
-  padding: 24px 24px;
+  height: auto;
+  /*height: 522px; */
+  /*padding: 24px 24px;*/
+  padding: 24px;
   border-radius: 20px;
-  box-shadow: 25px 25px 25px rgba(0, 0, 0, 0.5);
+  /*box-shadow: 25px 25px 25px rgba(0, 0, 0, 1.0);*/
+  box-shadow: 8px 8px 0px hsl(0, 0%, 7%);
 }
+
 /*
 .card > * {
   margin-bottom: 12px;
@@ -45,43 +48,65 @@ body{
 /*Logo Image*/
 #image-one {
   /*display: block;*/
-  /*width: 100%;
-  height: auto;*/
-  width: 336px;
-  height: 200px;
-  /*margin-bottom: 16px;*/
-  margin-bottom: 12px;
+  /*width: 336px;
+  height: 200px;*/
+  width: 100%;
+  height: auto;
+  margin-bottom: 16px;
   border-radius: 10px;
 }
 
 button {
   background: hsl(47, 88%, 63%);
-  border: none;
+  border: 2px solid hsl(47, 88%, 63%);
   /*width: 82px;
   height: 29px;*/
   border-radius: 4px;
-  padding: 4px 12px;
-  font-size: 58px 29px;
+  padding: 7px 12px;
+  font-size: 14px;
   font-weight: 800;
-  margin-top: 15px; 
+  line-height: 1;
+  /*margin-top: 15px;*/
+  margin-top: 11px;
   text-align: center;
 }
 
-button:hover{
+button:hover {
   background-color: hsl(47, 88%, 55%);
   cursor: pointer;
 }
 
+
+.published-date {
+  font-size: 14px;
+}
+
 /* H2 Heading */
+/*
 .card h2 {
   font-weight: 800;
   color: hsl(0, 0%, 7%);
   margin-bottom: 12px;
 }
+*/
 
-.card   h2:hover {
+.card h2>a {
+  font-weight: 800;
+  color: hsl(0, 0%, 7%);
+  margin-bottom: 12px;
+  text-decoration: none;
+}
+
+/*
+.card  h2:hover {
   color: hsl(47, 88%, 63%);
   cursor: pointer;  
+}
+*/
+
+.card h2>a:hover {
+  color: hsl(47, 88%, 63%);
+  cursor: pointer;
 }
 
 .card p {
@@ -91,28 +116,27 @@ button:hover{
 }
 
 #paragraph-one {
-   color:hsl(0, 0%, 42%);
-   line-height: 1.5;
+  color: hsl(0, 0%, 42%);
+  line-height: 1.5;
 }
 
-/*.txt-container{
+/* I decided to just wrap up the text div with 'div' alone, rather than targeting it as a class
+.txt-container{
     display: flex;
     flex-direction: column;
     text-align: left;
-  } */
+  } 
+*/
 
-.published-date {
-  font-size: 14px;
-}
-
-.image-two{
-    display: flex;
-    /*flex-direction: row;*/
-    align-items: center;
-    justify-content: left;
-    gap: 12px;
-    margin-top: 1px;
-    margin-bottom: 12px;
+/*Avatar Image*/
+.image-two {
+  display: flex;
+  /*flex-direction: row;*/
+  align-items: center;
+  justify-content: left;
+  gap: 12px;
+  margin-top: 1px;
+  /*margin-bottom: 1px;*/
 }
 
 .image-two img {
@@ -120,11 +144,16 @@ button:hover{
   height: 32px;
 }
 
-.image-two p{
-    font-weight: 800;
+.image-two p {
+  font-weight: 800;
 }
 
+.tag:focus-visible,
+button:focus-visible {
+  outline: 2px solid hsl(0, 0%, 7%);
+}
 
+/*
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -133,3 +162,4 @@ button:hover{
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+*/
