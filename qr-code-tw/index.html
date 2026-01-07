@@ -3,33 +3,32 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <script src="https://cdn.tailwindcss.com"></script> <!--of the 3 available options I chose this one to load Tailwind CSS-->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  <!--of the 3 available options I chose this one to load Tailwind CSS-->
+  <script src="https://cdn.tailwindcss.com"></script>
   <title>Frontend Mentor | QR code component</title>
 </head>
 
-<body>
-  <!-- <main class="container">
-    <div class="card">
-      <img src="images/image-qr-code.png" alt="QR code for Frontend Mentor">
-      <h1>Improve your front-end skills by building projects</h1>
-      <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+<body class="m-0 p-0 [font-family:'Outfit',sans-serif] bg-[hsl(212,45%,89%)]">
+  <div class="flex justify-center items-center h-screen shadow-[0_25px_25px_rgba(0,0,0,0.05)] min-w-[320px]">
+    <div
+      class="flex flex-col justify-center items-center text-center bg-[hsl(0,0%,100%)] w-[320px] pt-4 px-4 pb-10 rounded-[20px] md:w-[320px]">
+      <!--the default in TW is height: auto.-->
+      <img src="images/image-qr-code.png" class="w-[288px] rounded-[10px]"
+        alt="image of QR code with white on blue background"> <!--the default in TW is height: auto.-->
+      <h1 class="text-[22px] font-bold text-[hsl(218,44%,22%)] mt-6 mb-4 max-w-[288px] md:text-[22px] text-4xl leading-tight">
+        Improve your front-end skills by building projects</h1>
+      <p class="text-[15px] font-normal text-[hsl(216,15%,48%)] max-w-[265px] text-center m-0 md:text-[15px]">
+        Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
     </div>
-  </main> -->
-  <!--
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Rodian Gaitan</a>. 
-  </div> -->
 
-<div    >
-
-
-  
-</div>
-
-
+  </div>
 
 </body>
 
