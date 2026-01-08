@@ -4,48 +4,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
 
+  <!--Google Font-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&display=swap"
     rel="stylesheet">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="styles.css">
-
+  <!--<link rel="stylesheet" href="styles.css">-->
+  <script src="https://cdn.tailwindcss.com"></script>
   <title>Frontend Mentor | Blog preview card</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 
 </head>
 
-<body>
-  <main class="container">
-    <div class="card">
-      <img id="image-one" src="./assets/images/illustration-article.svg"
-        alt="an abstract image of yellow and black colors and symbols">
-
-      <div>
-        <button href="">Learning</button>
-
-        <p class="published-date">Published 21 Dec 2023</p>
-        <!--<time class="published-date" datetime="2023-12-21">Published 21 Dec 2023 </time>-->
-
-        <h2><a href="#" class="tag">HTML & CSS foundations</a></h2>
-
-        <p id="paragraph-one">These languages are the backbone of every website, defining structure, content, and
+<body
+  class="box-border m-0 p-0 [font-family:'Figtree',sans-serif] bg-[hsl(47,88%,63%)]">
+  <div class="flex justify-center items-center h-screen">
+    <div
+      class="bg-[hsl(0,0%,100%)] border border-[hsl(0,0%,7%)] w-[384px] p-6 rounded-[20px] shadow-[8px_8px_0px_hsl(0,0%,7%)]">
+      <!--height:auto is default in TW-->
+      <img src="./assets/images/illustration-article.svg"
+        class="w-full mb-4 rounded-[10px]"
+        alt="an abstract image of yellow and black colors and symbols"> <!--height:auto is default in TW-->
+      <div class="flex flex-col gap-2 [&>p]:font-medium [&>p]:text-[hsl(0,0%,7%)] [&>p]:mb-[12px]">
+        <button
+          class="self-start bg-[hsl(47,88%,63%)] border-2 border-[hsl(47,88%,63%)] rounded-[4px] px-[12px] py-[6px] text-[14px] font-extrabold leading-none mt-[10px] mb-[2px] text-center hover:bg-[hsl(47,88%,55%)] cursor-pointer">Learning</button>
+        <p class="text-[14px]">Published 21 Dec 2023</p>
+        <h2 class="m-0"><a href="#" class="m-0 text-2xl font-extrabold text-[hsl(0, 0%, 7%)] no-underline hover:text-[hsl(47,88%,63%)]">HTML & CSS foundations</a></h2>
+      
+        <p id="paragraph-one" class="!text-[hsl(0,0%,42%)] leading-[1.5] mb-[24px] mt-[7px]">These languages are the backbone of every website, defining structure, content, and
           presentation.</p>
       </div>
 
-      <div class="image-two">
-        <img src="./assets/images/image-avatar.webp" alt="a side image of Greg Hooper smiling">
-        <p>Greg Hooper</p>
+      <div class="image-two flex items-center justify-start gap-[12px] mt-[5px]">
+        <img src="./assets/images/image-avatar.webp" alt="a side image of Greg Hooper smiling" class="h-[32px] w-[32px]">
+        <p class="font-extrabold">Greg Hooper</p>
       </div>
-  </main>
+    </div>
 
-  <!--<div class="attribution">
+    <!--<div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Rodian Gaitan</a>.
   </div>-->
